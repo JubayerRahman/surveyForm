@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lng="en">
+  <head>
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title"> Ohee Survey Form</h1>
+    <p id="description"> Fill in the form with alll the necessary info.</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+      <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email" required></label>
+      <label id="number-label" for="number">Age: <input id="number" type="number" min="10" max="99" placeholder="age"></label>
+</fieldset>
+<fieldset>
+  <label for="dropdown"> What you do?
+    <br>
+      <select id="dropdown">
+        <option>Select one</option>
+        <option>Student</option>
+        <option>Business Man</option>
+        <option>Job Holder</option>
+      </select>
+  </label>
+<br>
+<p class="tt">Your Current Status:</p>
+<br>
+  <label>
+    <input type="radio" name="radio" value="life" class="life"/> Life
+  </label>
+  <label>
+    <input type="radio" name="radio" value="death" class="life"> Death
+  </label>
+  <br>
+  <p class="tt">Your Skills:</p>
+  <br>
+    <label><input type="checkbox" value="11" class="life"> html</label>
+  <br>
+    <label><input type="checkbox" value="12" class="life"> css</label>
+    <br>
+    <label> Have any question?
+    <textarea rows="5" placeholder="Send your thoughts"></textarea>
+    <br>
+    <br>
+    <button id="submit">Submit</button>
+</fieldset>
+    </form>
+  </body>
+</html>
